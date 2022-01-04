@@ -38,17 +38,17 @@ const prodsValidations = [
 router.get('/', productsAPIController.index);
 
 /*** CREATE ONE PRODUCT ***/
-router.get('/create', productsAPIController.create);
-router.post('/', upload.any(), prodsValidations, productsAPIController.store);
+// router.get('/create', productsAPIController.create);
+// router.post('/', upload.any(), prodsValidations, productsAPIController.store);
 
 /*** GET ONE PRODUCT ***/
 router.get('/detail/:id', productsAPIController.detail);
 
 /*** EDIT ONE PRODUCT ***/
-router.get('/edit/:id', productsAPIController.edit);
-router.patch('/edit/:id', upload.any(), prodsValidations, productsAPIController.update);
+// router.get('/edit/:id', productsAPIController.edit);
+// router.patch('/edit/:id', upload.any(), prodsValidations, productsAPIController.update);
 
 /*** DELETE ONE PRODUCT ***/
-router.delete('/delete/:id', productsAPIController.destroy);
+// router.delete('/delete/:id', productsAPIController.destroy);
 
 module.exports = router;
